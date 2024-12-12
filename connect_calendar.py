@@ -45,7 +45,7 @@ class Calendar:
         now = f'{in_date.isoformat()}T00:00:00.000Z'
 
         # get holidays in this month
-        holidays_id = 'ja.japanese#holiday@group.v.calendar.google.com'
+        holidays_id = 'qb06rht4uhtig557b1eigbf5jvg06seu@import.calendar.google.com'
         res = service.events().list(
             calendarId=holidays_id,
             timeMin=time_min,
