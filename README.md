@@ -32,7 +32,7 @@ For example, these images are displayed on e-paper.
 $ python landscape.py
 $ python portrait.py
 ```
-
+[原始readme](README_orig.md)
 Note that [portrait.py](portrait.py) uses default fonts on macOS Big Sur 11.1. If you can't use these, you've to replace the alternative fonts.
 
 ## Example
