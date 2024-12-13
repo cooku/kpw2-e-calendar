@@ -140,6 +140,6 @@ dt = datetime.now().isoformat(sep=' ')[:16].replace('-', '.')
 draw.multiline_text((10, SIZE[1] - 30), f'Updated at {dt}',
                     font=get_font('en', 16), fill=grey[10])
 
-# to bmp
+# to png
 file_name = './image_1024x768.png'
 img.save(file_name, 'png')
