@@ -28,7 +28,7 @@ def padding_width(width: int, text: str, font_symbol: str, font_size: int):
 # for mac only
 font_files = dict(
     en='./Fonts/SourceHanSerif-Bold.otf',
-    title='./Fonts/Chancery Bold.ttf',
+    title='./Fonts/Chancery-Bold.ttf',
     weekendfont='./Fonts/SourceHanSerif-Heavy.ttc',
     eventfont='./Fonts/SarasaFixedHC-Bold.ttf'
 )
@@ -140,6 +140,6 @@ dt = datetime.now().isoformat(sep=' ')[:16].replace('-', '.')
 draw.multiline_text((10, SIZE[1] - 30), f'Updated at {dt}',
                     font=get_font('en', 16), fill=grey[10])
 
-# to png
-file_name = './image_1024x768.png'
+# to bmp
+file_name = './bg_ss00.png'
 img.save(file_name, 'png')
