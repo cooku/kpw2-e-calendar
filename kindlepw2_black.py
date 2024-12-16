@@ -143,6 +143,6 @@ draw.multiline_text((10, SIZE[1] - 30), f'Updated at {dt}',
 from PIL import ImageOps
 
 # to png
-file_name = './bg_ss00.png'
+file_name = './bg_ss00_black.png'
 img = ImageOps.invert(img)
 img.save(file_name, 'png')
