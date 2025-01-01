@@ -53,7 +53,7 @@ class Calendar:
             singleEvents=True,
             orderBy='startTime'
         ).execute()
-        tmp = [[int(i) for i in r['start']['date'].split('-')]
+        tmp = [[int(i) for i in (r['start']['date'] if 'date' in r['start'] else r['start']['dateTime'].split('T')[0]).split('-')]
                for r in res['items']]
         holidays_this_month = [int(date[2]) for date in tmp]
 
